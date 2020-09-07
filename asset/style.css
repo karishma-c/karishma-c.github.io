@@ -6,11 +6,11 @@
     --neutral: white;
     --neutral-1: black;
     --font-family: 'Open Sans';
-    --weight-1: 400;
+    --weight-1: 500;
     --weight-2: 600;
-    --weight-3: bolder;
-    --font-size-1: 36px;
-    --font-size-2: 23px;
+    --weight-3: 900;
+    --font-size-1: 45px;
+    --font-size-2: 28px;
     --font-size-3: 20px;
     --border-radius: 8px;
     --border-radius-1: 80%; 
@@ -18,9 +18,7 @@
 }
 body{
     background-color: var(--neutral);
-    font-size: var(--font-size-2);
     font-family: var(--font-family);
-    font-weight: var(--weight-1);
     width: 100%;
     margin-left: 0;
 }
@@ -71,15 +69,15 @@ body{
     font-family: var(--font-family);
     
 }
-.welcome-section h1{
+.welcome-section h2{
     font-size: var(--font-size-1);
-    font-weight: var(--weight-3);
+    font-weight: var(--weight-2);
     margin: 1em auto 0 auto;
     padding: 0;
 }
 .welcome-section p{
     font-size: var(--font-size-2);
-    font-weight: var(--weight-2);
+    font-weight: var(--weight-1);
     color: var(--color-1);
     padding: 0;
     margin: 0 auto;
@@ -127,7 +125,7 @@ body{
     text-align: center;
     font-family: var(--font-family);
     font-size: var(--font-size-3);
-    font-weight: var(--weight-2);
+    font-weight: var(--weight-1);
     color: var(--color-1);
     margin: .5em auto .5em auto;
 }
@@ -142,7 +140,7 @@ body{
     text-align: center;
     font-family: var(--font-family);
     font-size: var(--font-size-2);
-    font-weight: var(--weight-3);
+    font-weight: var(--weight-2);
     color: var(--color-1);
     margin: 1em auto;
     border-bottom: var(--border-bottom) solid var(--color-1);
@@ -156,7 +154,7 @@ body{
 .skills li{
     font-family: var(--font-family);
     font-size: var(--font-size-3);
-    font-weight: var(--weight-2);
+    font-weight: var(--weight-1);
     color: var(--color-1);
     padding: 5px 10px;
     border: 2px solid var(--color-1);
@@ -210,7 +208,7 @@ body{
 .caption{
     font-family: var(--font-family);
     font-size: var(--font-size-3);
-    font-weight: var(--weight-2);
+    font-weight: var(--weight-1);
     color: var(--neutral-1);
     text-align: center;
     margin:10px 0 0 0;
@@ -273,6 +271,9 @@ img{
     margin: 1em auto;
 }
 .cont-links{
+    font-family: var(--font-family);
+    font-size: var(--font-size-3);
+    font-weight: var(--weight-1);
     display: flex;
     flex-direction: row;
     color: var(--color-1);
@@ -359,26 +360,6 @@ footer{
     }
 }
 @media (max-width:700px){
-    .navbar{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .nav-list{
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        justify-content: center;
-    }
-    .nav-links{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 1em;
-    }
-    
     .cards-container{
         width: 90%;
         margin: 1em auto;
@@ -422,7 +403,6 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
         width: 100%;
         background-color: var(--color-4);
     }
@@ -442,6 +422,9 @@ footer{
     }
 }
 @media (max-width:350px){
+    .description{
+        max-width: 310px;
+    }
     .card
     {
         width: 280px;
