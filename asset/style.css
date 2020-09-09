@@ -13,6 +13,7 @@
     --font-size-2: 28px;
     --font-size-3: 24px;
     --font-size-4: 20px;
+    --font-size-5: 35px;
     --border-radius: 8px;
     --border-radius-1: 80%; 
     --border-bottom: 2px;
@@ -23,6 +24,13 @@ body{
     width: 100%;
     margin-left: 0;
     margin-bottom: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 .navbar{
     display: flex;
@@ -55,10 +63,12 @@ body{
     font-weight: var(--weight-2);
     margin: 0 1em;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px; 
+    transition: all 1s ease 0;
 }
 .nav-links:hover{
     color: var(--color-2);
+    font-size: var(--font-size-2);
 }
 .welcome-section{
     display: flex;
@@ -109,6 +119,27 @@ body{
 .contact-links i{
     padding: 15px 15px;
 }
+.down-btn{
+    font-size: var(--font-size-4);
+    font-weight: var(--weight-1);
+    margin: 2em auto 3em auto;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    background-color: var(--color-1);
+}
+.down-btn:hover{
+    color: var(--color-3);
+    transform: scaleY(0.8);
+    border-bottom: 3px solid var(--color-2);
+}
+.down-btn a{
+    text-decoration: none;
+    color: var(--color-2);
+}
+.down-btn a i{
+    padding: 0 10px;
+}
 .about-section{
     width: 100%;
     background-color: var(--color-3);
@@ -120,7 +151,7 @@ body{
 .about-heading{
     text-align: center;
     font-family: var(--font-family);
-    font-size: var(--font-size-1);
+    font-size: var(--font-size-5);
     font-weight: var(--weight-2);
     color: var(--color-2);
     margin: 1em auto .5em auto;
@@ -136,20 +167,50 @@ body{
     color: var(--color-2);
     margin: .5em auto .5em auto;
 }
-.skill{
+.education, .skill{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
 }
-.sub-heading{
+.edu-heading, .sub-heading{
     text-align: center;
     font-family: var(--font-family);
     font-size: var(--font-size-2);
     font-weight: var(--weight-2);
     color: var(--color-2);
     margin: 1em auto;
+    border-bottom: var(--border-bottom) solid var(--color-2);
+}
+.edu-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    padding: 0;
+    line-height: 1.5;
+    color: var(--color-2);
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: var(--font-size-4);
+    font-weight: var(--weight-1);
+}
+.resume{
+    color: var(--color-2);
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: var(--font-size-4);
+    font-weight: var(--weight-1);
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.resume a{
+    text-decoration: none;
+    color: var(--color-2);
+}
+.resume a:hover{
     border-bottom: var(--border-bottom) solid var(--color-2);
 }
 .skills{
@@ -215,14 +276,7 @@ body{
 .project-card-1{
     grid-area: 1/1/2/2;
 }
-.caption{
-    font-family: var(--font-family);
-    font-size: var(--font-size-4);
-    font-weight: var(--weight-1);
-    color: var(--neutral-1);
-    text-align: center;
-    margin:10px 0 0 0;
-}
+
 img{
     width: 100%;
     height:100%;    
@@ -251,7 +305,7 @@ img{
     font-size: var(--font-size-4);
     font-weight: var(--weight-1);
     margin: 2em auto;
-    padding: 16px;
+    padding: 10px;
     text-decoration: none;
     border-radius: var(--border-radius);
 }
@@ -287,6 +341,9 @@ img{
     color: var(--color-2);
     text-decoration: none;
     margin: 0 1em 1em 1em;
+}
+.cont-links:hover{
+    transform: translateY(8px);
 }
 .linked-in, .git-hub, .twitter, .g-mail{
     display: flex;

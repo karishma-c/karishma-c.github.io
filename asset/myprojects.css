@@ -5,42 +5,6 @@ body{
     margin-left: 0;
     margin-bottom: 0;
 }
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: white;
-    margin-top: .5em;
-}
-.nav-list{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-}
-.nav-links{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    color: #3bd67d;
-    font-family: 'Open Sans';
-    font-size: 24px;
-    font-weight: 600;
-    margin: 0 1em;
-    text-decoration: none;
-    padding: 10px;
-}
-.nav-links:hover{
-    color: #57197b;
-}
 .container{
     width: 95%;
     margin: 2em auto;
@@ -57,14 +21,6 @@ body{
     text-align: center;
     margin: 1em auto;
 }
-.sub-heading{
-    font-family: 'Open Sans';
-    font-size: 25px;
-    font-weight: 800;
-    color: #8660c9;
-    text-align: left;
-    margin: .5em auto 1em auto;
-}
 .table-container{
     width: 100%;
     margin: .5em auto .5em auto;
@@ -74,24 +30,24 @@ table{
     width: 70%;
     text-align: center;
     margin: 2em auto;
-}
-table, th, tr, td{
     border-collapse: collapse;
-    border: 1px solid rgb(147, 5, 175);
+    border-radius: 1em;
+    border-style: hidden; 
+    box-shadow: 0 0 0 1px rgb(10, 10, 10);
+}
+th, tr, td{
+    border-collapse: collapse;
+    border: 1px solid rgb(10, 10, 10);
 }    
 th{
     font-size: 22px;
     text-align: left;
     padding: 10px;
-    background-color: rgb(220, 90, 247);
-    color: white;
 }
 tr{
     padding: 12px;
 }
-tr:hover{
-    background-color: #eed4fc;
-}
+
 td{
     font-size: 18px;
     font-weight: 400;
@@ -103,7 +59,7 @@ td a{
     color: black;
 }
 td a:hover{
-    color: #7f54ca;
+    color: #7846cf;
     border-bottom: 2px solid #6534b9;
 }
 .btn{
@@ -122,4 +78,9 @@ td a:hover{
 }
 .btn:hover{
     background-color: #5ae496;
+}
+@media(max-width:500px){
+    table{
+        width: 90%;
+    }
 }
