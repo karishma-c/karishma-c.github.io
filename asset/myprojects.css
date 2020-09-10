@@ -37,7 +37,8 @@ table{
     margin: 2em auto;
     border-collapse: separate; 
     border-spacing:0px 6px; 
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+    /* box-shadow: 0px 10px 25px rgba(0,0,0,0.1); */
+    filter: drop-shadow(0px 10px 25px rgba(0,0,0,0.1));
 }
 th{
     font-family: var(--font-family-1);
