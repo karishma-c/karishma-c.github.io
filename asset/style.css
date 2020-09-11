@@ -70,7 +70,7 @@ body{
     padding: 10px; 
 }
 .nav-links:hover{
-    box-shadow: 5px 10px 8px 10px rgba(0,0,0,0.10);
+    color: var(--color-2);
     transform: translateY(-6px);
 }
 .welcome-section{
