@@ -67,7 +67,7 @@ body{
     font-weight: var(--weight-2);
     margin: 0 1em;
     text-decoration: none;
-    padding: 10px; 
+    padding: 10px;
 }
 .nav-links:hover{
     color: var(--color-2);
@@ -453,10 +453,49 @@ footer{
         margin: 0 auto;
         padding: 18px;
     }
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .about-heading, .edu-heading, .sub-heading{
+        text-align: left;
+        margin: .5em 1em;
+    }
     .description{
         text-align: left;
         margin: .5em 1em;
         padding: 0 .5em;
+    }
+    .education, .skill{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 1em 0;
+    }
+    .edu-desc{
+        margin: 0 1.3em;
+        padding: 3px;
+        text-align: left;
+    }
+    .resume{
+        text-align: left;
+        margin: 1em 0 .5em 1.4em;
+    }
+    .skills{
+        margin: 0 0 1em 1em;
+    }
+    .project-section{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .heading{
+        margin: 1em 0 1em .5em;
+        text-align: left;
     }
     .cards-container{
         width: 90%;
@@ -502,6 +541,10 @@ footer{
         justify-content: flex-start;
         align-items: flex-start;
     }
+    .contact-section p{
+        text-align: left;
+        margin: .5em 1em;
+    }
     .contact-details{
         display: flex;
         flex-direction: column;
@@ -518,6 +561,12 @@ footer{
     }
     .description{
         max-width: 310px;
+    }
+    .skills{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
     .card
     {
