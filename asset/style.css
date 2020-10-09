@@ -1,3 +1,4 @@
+         /*------------   css variables -----------*/
 :root {
     --font-family: 'Poppins', sans-serif;
     --font-size-6: 1.25rem;
@@ -34,6 +35,7 @@ body {
     font-family: var(--font-family);
     font-size: var(--font-size);
 }
+         /*------------total container------------*/
 .container {
     display: flex;
     flex-direction: column;
@@ -41,6 +43,7 @@ body {
     justify-content: space-between;
     margin: 0 auto;
 }
+         /*---------navigation bar----------*/
 .navbar {
     margin: 20px auto 0 auto;
     width:50%;
@@ -50,7 +53,7 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-
+         /*------------navigation links----------*/
 .nav-links {
     font-family: var(--font-family);
     font-size:var(--font-size-4);
@@ -61,15 +64,17 @@ body {
     padding: 4px 14px;
 
 }
-
+         /*-----------hover effect for navigation---------*/
 .active, .nav-links:hover {
     background: var(--color-3);
-        color: var(--color-2);
+    color: var(--color-2);
     border-radius: var(--border-radius);
-}
+} 
+         /*----------about section starts---------*/
 .welcome-section {
     margin: 180px auto 0 auto;
 }
+         /*------------about section-----------*/
 .introduction {
     display: flex;
     flex-direction: column;
@@ -77,6 +82,7 @@ body {
     align-items: center;
     font-family: var(--font-family);
 }
+         /*-------------about section heading------------*/
 .greeting {
     font-size: var(--font-size-2);
     font-weight: var(--font-weight-4);
@@ -86,6 +92,7 @@ body {
     margin: 0 auto 15px auto;
     max-width: 516px;
 }
+/*-------------about section description------------*/
 .desc {
     font-size: 1.375em;
     font-weight: var(--font-weight-1);
@@ -103,6 +110,7 @@ body {
 .resume:hover {
     text-decoration: underline;
 }
+/*-------------know more button------------*/
 .btn {
     border: none;
     background-color: var(--color-4);
@@ -115,7 +123,10 @@ body {
     text-decoration: none;
 
 }
+/*----------about section ends----------*/
 
+
+/*------------work section starts------------*/
 .work-section {
     display: flex;
     flex-direction: column;
@@ -123,11 +134,12 @@ body {
     align-items: center;
     margin: 0 auto;
 }
-
+/*---------------work section heading-------------*/
 .work-section .heading
 {
     margin: 0 auto 80px ;
 }
+/*--------------projects container-------------*/
 .projects {
     display: flex;
     flex-flow: row wrap;
@@ -136,6 +148,7 @@ body {
     width: 100%;
     margin: 0 auto 80px;
 }
+/*-------------project card--------------*/
 .hotstar-card, .mi-card {
     display: flex;
     flex-flow: column wrap;
@@ -146,10 +159,12 @@ body {
     background-color: var(--color-4);
     border-radius: var(--border-radius);
 }
+/*------------project image-------------*/
 .hotstar-card-img, .mi-card-img {
     width: 90%;
     margin: 20px 0 0 0;
 }
+/*--------------project description container------------*/
 .hotstar-card-desc, .mi-card-desc {
     display: flex;
     flex-flow: column wrap;
@@ -160,6 +175,7 @@ body {
     width: 90%;
     margin: 20px;
 }
+/*-----------project title----------*/
 .card-title {
     font-family: var(--font-family);
     font-size: var(--font-size-4);
@@ -170,6 +186,7 @@ body {
     margin: 20px 0 10px 25px;
     padding: 0;
 }
+/*---------------project description----------*/
 .card-desc {
     font-size: var(--font-size-6);
     font-weight: var(--font-weight-1);
@@ -178,6 +195,7 @@ body {
     color: var(--color-2);
     padding: 0;
 }
+/*--------------technologies container-----------*/
 .technology-container {
     display: flex;
     flex-direction: row ;
@@ -185,6 +203,7 @@ body {
     align-items: flex-start;
     margin: 0 0 20px 25px;
 }
+/*--------------technologies used in project-----------*/
 .tech-stack {
     font-size: var(--font-size-5);
     font-weight: var(--font-weight-3);
@@ -193,19 +212,23 @@ body {
     margin: 0 40px 0 0;
     padding: 0;
 }
+/*--------------project code link container-----------*/
 .link-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     margin: 0 0 25px 25px;
 }
+/*--------------project live link and code link-----------*/
 .project-link
 {
     width: 50px;
     margin:0 50px 0 0;
 }
+/*--------------project section ends-----------*/
 
 
+/*--------------skills section starts-----------*/
 .skills-section {
     display: flex;
     flex-direction: column;
@@ -213,6 +236,7 @@ body {
     justify-content: center;
     margin: 0 auto;
 }
+/*--------------skills section heading-----------*/
 .heading {
     font-family: var(--font-family);
     font-size: 4em;
@@ -222,7 +246,7 @@ body {
     text-align: center;
     margin: 0 auto 50px ;
 }
-
+/*--------------my skills container-----------*/
 .skills { 
     display: flex;
     flex-flow: row wrap;
@@ -231,6 +255,7 @@ body {
     margin: 0 auto;
     width: 80%;
 }
+/*--------------skills-----------*/
 .html, .css, .bs, .sass, .js, .git {
     display: flex;
     flex-direction: column;
@@ -238,10 +263,12 @@ body {
     justify-content: center;
     margin: 30px 50px;
 }
+/*--------------skill icons-----------*/
 img {
     width: 100%;
     height: 100%;
 }
+/*--------------skills name-----------*/
 .skill {
     font-size: var(--font-size-5);
     font-weight: var(--font-weight-3);
@@ -250,6 +277,9 @@ img {
     margin: 10px auto 0 auto;
     text-align: center;
 }
+/*--------------skills section ends-----------*/
+
+/*--------------contact section starts-----------*/
 .contact-section {
     display: flex;
     flex-direction: column;
@@ -257,6 +287,7 @@ img {
     align-items: flex-start;
     margin: 100px auto 57px;
 }
+/*--------------contact details container-----------*/
 .contact-details {
     display: flex;
     flex-flow: row wrap;
@@ -264,7 +295,7 @@ img {
     align-items: center;
     margin: 0 auto;
 }
-
+/*--------------social media links-----------*/
  .linked-in, .twitter, .git-hub {
     width: 100px;
     height: 100px;
@@ -282,9 +313,14 @@ img {
     border-radius: var(--border-radius);
     margin: 0 30px 0 0;
 }
+/*--------------contact section ends-----------*/
+
+
+/*--------------footer section starts-----------*/
 .footer-container {
     margin: 0 auto;
 }
+/*--------------footer content-----------*/
 .footer-content {
     font-family: var(--font-family);
     display: flex;
@@ -312,4 +348,124 @@ img {
 .go-up {
     margin: 0 0 0 40px;
     width: 40px;
+}
+/*--------------footer section ends-----------*/
+
+/*--------------media queries-for tablet-----------*/
+
+@media(max-width:900px) {
+    
+    .navbar {
+       width:60%;
+    }
+    .hotstar-card, .mi-card {
+        margin: 20px auto;
+    }
+    .skills { 
+        width: 90%;
+    }
+    .linked-in, .twitter, .git-hub {
+        margin: 40px 60px;
+    }
+    .gmail-link {
+        margin: 0 auto;
+    }
+}
+
+/*--------------media queries-for mobile-----------*/
+
+@media(max-width:700px) {
+
+    
+    .navbar {
+        width:98%;
+    }
+    .greeting {
+        max-width: 450px;
+        text-align: left;
+        padding: 0 20px;
+    }
+    .desc {
+        text-align: left;
+        max-width: 450px;
+        padding: 0 20px;
+    }
+    .hotstar-card, .mi-card {
+        margin: 20px auto;
+    }
+    .tech-stack {
+        font-size: var(--font-size-5);
+        font-weight: var(--font-weight-3);
+        line-height: var(--line-height-2);
+        color: var(--color-2);
+        margin: 0 40px 0 0;
+        padding: 0;
+    }
+    .skills { 
+        width: 90%;
+    }
+    .html, .css, .bs, .sass, .js, .git {
+        margin: 30px;
+    }
+    .linked-in, .twitter, .git-hub {
+        margin: 40px 15px;
+    }
+    .gmail-link {
+        margin: 0 auto;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        padding: 30px 0;
+    }
+    .content, .profile-link {
+        margin: 10px auto;
+    }
+    .go-up {
+       margin: 0 auto;
+    }
+}
+
+/*--------------media queries-for extra small screen-----------*/
+ 
+@media(max-width:300px) {
+
+    .navbar {
+        width: 100%;
+        margin: 20px auto
+    }
+    .nav-links {
+        margin: 0 0 0 10px;
+    }
+    .greeting {
+        text-align: left;
+        max-width: 450px;
+        padding: 0 0 0 20px;
+    }
+    .desc {
+        text-align: left;
+        max-width: 420px;
+        padding: 0 0 0 20px;
+    }
+    .projects {
+        width: 99%;
+        margin: 0 auto;
+    }
+    .hotstar-card, .mi-card {
+        width: 350px;
+        margin: 20px auto;
+    }
+
+    .html, .css, .bs, .sass, .js, .git {
+        margin: 20px auto;
+    }
+    .linked-in, .twitter, .git-hub {
+        margin: 30px 20px;
+    }
+    .gmail-link {
+       margin: 0 auto;
+    }
+
 }
