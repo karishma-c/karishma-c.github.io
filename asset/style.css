@@ -8,6 +8,7 @@
     --font-size-2: 3.438rem;
     --font-size-1:  4rem;
     --font-size:16px;
+    --font-size-small:13px;
     --font-weight-1: 400;
     --font-weight-2: 500;
     --font-weight-3: 600;
@@ -94,7 +95,7 @@ body {
 }
 /*-------------about section description------------*/
 .desc {
-    font-size: 1.375em;
+    font-size: var(--font-size-5);
     font-weight: var(--font-weight-1);
     line-height: var(--line-height-2);
     color: var(--color-2);
@@ -430,42 +431,155 @@ img {
 
 /*--------------media queries-for extra small screen-----------*/
  
-@media(max-width:300px) {
-
+@media(max-width:375px) {
+    :root
+    {
+        --font-size-1:1.5rem;
+        --font-size-2:1.3rem;
+        --font-size-3:1rem;
+        --font-size-4:.9rem;
+    }
+    body {
+        font-size: var(--font-size-small);
+    }
     .navbar {
-        width: 100%;
-        margin: 20px auto
+        width:100%;
     }
     .nav-links {
-        margin: 0 0 0 10px;
+       
+        font-size:var(--font-size-3);
+    }
+  
+    .welcome-section {
+        margin: 100px auto 0 auto;
+    }
+    .introduction {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .greeting {
-        text-align: left;
-        max-width: 450px;
-        padding: 0 0 0 20px;
+        font-size: var(--font-size-1);
+        margin:0  ;
+        padding: 0 10px;
     }
     .desc {
-        text-align: left;
-        max-width: 420px;
-        padding: 0 0 0 20px;
+        font-size: var(--font-size-3);
+        margin: 0 0 30px 0;
+        width: 95%;
+        padding: 0 10px;
+        text-align: center;
+
     }
-    .projects {
-        width: 99%;
-        margin: 0 auto;
-    }
-    .hotstar-card, .mi-card {
-        width: 350px;
-        margin: 20px auto;
+   
+  
+    .btn {
+        margin: 0 0 80px 10px;
+        font-size: var(--font-size-3);
+
     }
 
-    .html, .css, .bs, .sass, .js, .git {
-        margin: 20px auto;
+    
+    .work-section .heading
+    {
+        margin: 0 0 10px ;
+        font-size: var(--font-size-1);
     }
-    .linked-in, .twitter, .git-hub {
-        margin: 30px 20px;
+    .projects {
+   
+        margin: 0 auto 15px;
+
+    }
+    .hotstar-card, .mi-card {
+      
+        width: 300px;
+        margin: 20px auto;
+ 
+    }
+
+    .hotstar-card-desc, .mi-card-desc {
+        width: 90%;
+        margin: 20px 0;
+    }
+    .card-title {
+        font-size: var(--font-size-2);
+        margin: 10px 0 5px 15px;
+    }
+    .card-desc {
+        font-size: var(--font-size-3);
+
+        margin: 0 15px 5px ;
+   
+    }
+    .technology-container {
+      
+        margin: 0 0 15px 15px;
+    }
+    
+    .tech-stack {
+        font-size: var(--font-size-4);
+
+    }
+    .link-container {
+    
+        margin: 0 0 15px 15px;
+    }
+    .project-link
+    {
+        width: 35px;
+        margin:0 40px 0 0;
+    }
+
+ .skills-section{
+     margin:  0;
+ }
+    .heading {
+        font-size: var(--font-size-1);
+        margin: 0 auto ;
+        padding: 0;
+    }
+   .skills
+   {
+       width: 100%;
+   }
+    .html, .css, .bs, .sass, .js, .git
+     {
+        width: 50px;
+    }
+
+    .skill {
+        font-size: var(--font-size-3);
+    }
+  
+    .contact-section {
+  
+        margin: 30px auto 20px;
+    }
+  
+     .linked-in, .twitter, .git-hub {
+        width: 50px;
+        margin: 0 10px ;
     }
     .gmail-link {
-       margin: 0 auto;
+        font-size: var(--font-size-3);
+        padding: 15px 30px;
+        margin: 0 10px;
+    }
+
+
+    .footer-content {
+        flex-flow: column wrap;
+        padding: 10px 0;
+    }
+    .content, .profile-link {
+        font-size:var(--font-size-4);
+        margin: 0 ;
+    }
+
+    .go-up {
+        margin: 30px 0 0 0 ;
+        width: 40px;
     }
 
 }
