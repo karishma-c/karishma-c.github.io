@@ -38,19 +38,16 @@ body{
     text-align: center;
     margin: 40px auto;
 }
-.go-back{
-    width: 70%;
-}
+
 .btn{
     color: var(--color-2);
     font-family: var(--font-family);
     font-size: var(--font-size-3);
     font-weight: var(--font-weight-2);
-    margin: 0;
+    margin: 0 auto;
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 8px;
-    text-align: left;
 }
 
 .btn:hover{
