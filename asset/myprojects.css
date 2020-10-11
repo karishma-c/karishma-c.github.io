@@ -48,6 +48,10 @@ body{
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 8px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn:hover{
@@ -110,9 +114,7 @@ td a:hover{
     table{
         width: 90%;
     }
-    .go-back{
-        width: 90%;
-    }
+    
     td{
         font-size: var(--font-size-5);
         padding: 10px;  
