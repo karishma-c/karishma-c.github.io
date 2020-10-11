@@ -331,6 +331,14 @@ img {
     border-radius: var(--border-radius);
     margin: 0 ;
 }
+.socailLinkContainer
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
 .socialMediaLinks {
     color: var(--color-2);
     text-decoration: none;
@@ -411,11 +419,12 @@ img {
     .skills { 
         width: 90%;
     }
-    .socialMediaLinks {
-        margin: 40px 60px;
+    .g-mail{
+        margin: 0;
     }
     .gmail-link {
         margin: 0 auto;
+        padding: 25px;
     }
 }
 
@@ -429,11 +438,9 @@ img {
     }
     .greeting {
         max-width: 450px;
-        text-align: left;
         padding: 0 20px;
     }
     .desc {
-        text-align: left;
         max-width: 450px;
         padding: 0 20px;
     }
@@ -454,8 +461,12 @@ img {
     .html, .css, .bs, .sass, .js, .git {
         margin: 30px;
     }
+    .contact-details
+    {
+        justify-content: center;
+    }
     .socialMediaLinks {
-        margin:0 10px;
+        margin:30px 20px;
     }
     .gmail-link {
         margin: 0 auto;
@@ -604,8 +615,9 @@ img {
     }
   
      .socialMediaLinks {
-        width: 50px;
-        margin: 0 10px ;
+        margin: 15px;
+        width: 70px;
+        height: 70px;
     }
     .gmail-link {
         font-size: var(--font-size-3);
