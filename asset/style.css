@@ -597,7 +597,10 @@ img {
   
         margin: 30px auto 20px;
     }
-  
+    .contact-details *:hover{
+        transform: none;
+        box-shadow: none;
+    }
      .linked-in, .twitter, .git-hub {
         width: 50px;
         margin: 0 10px ;
