@@ -29,6 +29,7 @@
     --border-radius-1: 20px;
     --box-shadow-1: 8px 12px 20px rgba(0,0,0,0.15);
     --box-shadow-2: 5px 10px 15px rgba(0,0,0,0.12);
+    
 }
 html {
     scroll-behavior: smooth;
@@ -319,6 +320,10 @@ img {
     height: 100px;
     margin: 30px ;
 }
+.g-mail
+{
+ margin: 0 30px 0 0;
+}
 .g-mail:hover, .linked-in:hover, .twitter:hover, .git-hub:hover {
     transform: translateY(-3px);
     box-shadow: var(--box-shadow-1);
@@ -335,7 +340,7 @@ img {
     padding: 25px 40px;
     background-color: var(--color-4);
     border-radius: var(--border-radius);
-    margin: 0 30px 0 0;
+    margin: 0  0 0;
 }
 /*--------------contact section ends-----------*/
 
@@ -375,8 +380,7 @@ img {
 }
 .go-up:hover {
     transform: translateY(-3px);
-    box-shadow: var(--box-shadow-1);
-    object-fit: contain;
+    filter: drop-shadow(8px 10px 10px rgba(0,0,0,0.35));
 }
 /*--------------footer section ends-----------*/
 
