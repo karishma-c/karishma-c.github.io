@@ -1,10 +1,11 @@
          /*------------   css variables -----------*/
 :root {
     --font-family: 'Poppins', sans-serif;
-    --font-size-6: 1.25rem;
-    --font-size-5:  1.375rem;
-    --font-size-4: 1.5rem;
-    --font-size-3: 1.875rem;
+    --font-size-7: 1.25rem;
+    --font-size-6:  1.375rem;
+    --font-size-5: 1.5rem;
+    --font-size-4: 1.875rem;
+    --font-size-3: 1.975rem;
     --font-size-2: 3.438rem;
     --font-size-1:  4rem;
     --font-size:16px;
@@ -65,7 +66,7 @@ img {
          /*------------navigation links----------*/
 .nav-links {
     font-family: var(--font-family);
-    font-size:var(--font-size-4);
+    font-size:var(--font-size-5);
     font-weight: var(--font-weight-3);
     line-height: var(--line-height-3);
     text-decoration: none;
@@ -103,7 +104,7 @@ img {
 }
 /*-------------about section description------------*/
 .desc {
-    font-size: var(--font-size-5);
+    font-size: var(--font-size-6);
     font-weight: var(--font-weight-1);
     line-height: var(--line-height-2);
     color: var(--color-2);
@@ -126,7 +127,7 @@ img {
     border-radius: var(--border-radius);
     margin: 0 auto 150px auto;
     padding: 10px 16px;
-    font-size: var(--font-size-6);
+    font-size: var(--font-size-7);
     font-weight: var(--font-weight-2);
     color: var(--color-2);
     text-decoration: none;
@@ -198,7 +199,7 @@ img {
 /*-----------project title----------*/
 .card-title {
     font-family: var(--font-family);
-    font-size: var(--font-size-4);
+    font-size: var(--font-size-5);
     font-weight: var(--font-weight-4);
     line-height: var(--line-height-4);
     color: var(--color-2);
@@ -208,7 +209,7 @@ img {
 }
 /*---------------project description----------*/
 .card-desc {
-    font-size: var(--font-size-6);
+    font-size: var(--font-size-7);
     font-weight: var(--font-weight-1);
     line-height: var(--line-height-1);
     margin: 0 37px 15px 25px;
@@ -225,7 +226,7 @@ img {
 }
 /*--------------technologies used in project-----------*/
 .tech-stack {
-    font-size: var(--font-size-5);
+    font-size: var(--font-size-6);
     font-weight: var(--font-weight-3);
     line-height: var(--line-height-2);
     color: var(--color-2);
@@ -263,7 +264,7 @@ img {
 /*--------------skills section heading-----------*/
 .heading {
     font-family: var(--font-family);
-    font-size: 4em;
+    font-size: var(--font-size-1);
     font-weight: var(--font-weight-4);
     line-height: var(--line-height-6);
     color: var(--color-2);
@@ -290,7 +291,7 @@ img {
 
 /*--------------skills name-----------*/
 .skill {
-    font-size: var(--font-size-5);
+    font-size: var(--font-size-6);
     font-weight: var(--font-weight-3);
     line-height: var(--line-height-2);
     color: var(--color-2);
@@ -322,7 +323,7 @@ img {
  margin: 0 30px 0 0;
 }
 .gmail-link {
-    font-size: var(--font-size-5);
+    font-size: var(--font-size-6);
     font-weight: var(--font-weight-3);
     color: var(--color-2);
     text-decoration: none;
@@ -372,7 +373,7 @@ img {
     padding: 30px 0;
 }
 .content, .profile-link {
-    font-size:var(--font-size-6);
+    font-size:var(--font-size-7);
     font-weight: var(--font-weight-2);
     line-height: var(--line-height-3);
     color: var(--color-2);
@@ -447,14 +448,6 @@ img {
     .hotstar-card, .mi-card, .clipboard-card {
         margin: 20px auto;
     }
-    .tech-stack {
-        font-size: var(--font-size-5);
-        font-weight: var(--font-weight-3);
-        line-height: var(--line-height-2);
-        color: var(--color-2);
-        margin: 0 40px 0 0;
-        padding: 0;
-    }
     .skills { 
         width: 90%;
     }
@@ -486,9 +479,38 @@ img {
     }
 }
 
-@media(max-width:430px) {
+@media(max-width:415px) {
 
+    :root {
+    --font-size-3: 1.25rem;
+    --font-size-2:  1.375rem;
+    --font-size-1: 2rem;
+    }
+    .greeting {
+        font-size: var(--font-size-1);
+        font-weight: var(--font-weight-3);
+    }
+    .desc {
+        font-size: var(--font-size-2);
+    }
+    .heading {
+        font-size: var(--font-size-1);
+    }
+    .projects {
+        width: 95%;
+    }
+    .tech-stack {
+        font-size: var(--font-size-3);
+        margin: 0 25px 0 0;
+    }
     
+    .skills {
+        width: 95%;
+    }
+    .html, .css, .bs, .sass, .js, .git {
+        width: 70px;
+        margin: 30px 50px;
+    }
     .g-mail
     {
      margin: 10px auto;;
