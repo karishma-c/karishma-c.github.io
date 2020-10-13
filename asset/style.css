@@ -479,7 +479,7 @@ img {
     }
 }
 
-@media(max-width:437px) {
+/* @media(max-width:437px) {
 
     :root {
     --font-size-3: 1.25rem;
@@ -492,7 +492,7 @@ img {
         font-weight: var(--font-weight-3);
     }
     .desc {
-        font-size: var(--font-size-3);
+        font-size: var(--font-size-2);
     }
     .heading {
         font-size: var(--font-size-1);
@@ -531,10 +531,10 @@ img {
     }
     
 }
-
+*/
 /*--------------media queries-for extra small screen-----------*/
  
-@media(max-width:375px) {
+@media(max-width:437px) {
     :root
     {
         --font-size-1:1.5rem;
@@ -597,7 +597,7 @@ img {
     }
     .hotstar-card, .mi-card, .clipboard-card {
       
-        width: 300px;
+        width: 90%;
         margin: 20px auto;
  
     }
@@ -619,12 +619,18 @@ img {
     .technology-container {
       
         margin: 0 0 15px 15px;
+        flex-flow: row wrap;
     }
     
     .tech-stack {
         font-size: var(--font-size-4);
-
+        margin: 0 30px 0 0;
     }
+  
+    .tech-stack:last-child {
+        margin: 0 ;
+    }
+  
     .link-container {
     
         margin: 0 0 15px 15px;
@@ -662,7 +668,7 @@ img {
   
         margin: 30px auto 20px;
     }
-  
+
      .socialMediaLinks {
         margin: 15px;
         width: 70px;
