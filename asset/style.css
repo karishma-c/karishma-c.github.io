@@ -479,22 +479,27 @@ img {
     }
 }
 
-@media(max-width:415px) {
+@media(max-width:437px) {
 
     :root {
     --font-size-3: 1.25rem;
     --font-size-2:  1.375rem;
     --font-size-1: 2rem;
     }
+    
     .greeting {
         font-size: var(--font-size-1);
         font-weight: var(--font-weight-3);
     }
     .desc {
-        font-size: var(--font-size-2);
+        font-size: var(--font-size-3);
     }
     .heading {
         font-size: var(--font-size-1);
+    }
+    .work-section {
+        margin: 0 auto;
+        width: 98%;
     }
     .projects {
         width: 95%;
@@ -581,9 +586,10 @@ img {
     
     .work-section .heading
     {
-        margin: 0 0 10px ;
+        margin: 0 0 10px;
         font-size: var(--font-size-1);
     }
+    
     .projects {
    
         margin: 0 auto 15px;
@@ -639,11 +645,13 @@ img {
     }
    .skills
    {
-       width: 100%;
+       width: 98%;
+       margin: 0 auto;
    }
     .html, .css, .bs, .sass, .js, .git
      {
         width: 50px;
+        margin: 30px 50px;
     }
 
     .skill {
@@ -659,6 +667,9 @@ img {
         margin: 15px;
         width: 70px;
         height: 70px;
+    }
+    .g-mail {
+        margin:  10px auto;
     }
     .gmail-link {
         font-size: var(--font-size-3);
