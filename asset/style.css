@@ -486,6 +486,25 @@ img {
     }
 }
 
+@media(max-width:430px) {
+
+    
+    .g-mail
+    {
+     margin: 10px auto;;
+    }
+    .gmail-link {
+        padding: 18px 34px;
+    }
+    
+    .socialMediaLinks {
+        width: 80px;
+        height: 80px;
+        margin: 20px ;
+    }
+    
+}
+
 /*--------------media queries-for extra small screen-----------*/
  
 @media(max-width:375px) {
