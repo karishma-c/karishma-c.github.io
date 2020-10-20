@@ -10,7 +10,6 @@
     --color-2: #1b262c;
     --color-3: #82c8f7;
     --color-4: #ffffff;
-    --color-5: #2f4653;
     --font-weight-1: 400;
     --font-weight-2: 500;
     --font-weight-3: 600;
@@ -38,7 +37,7 @@ body{
     font-weight: var(--font-weight-4);
     color: var(--color-2);
     text-align: center;
-    margin: 40px auto;
+    margin: 30px auto;
 }
 
 .btn{
