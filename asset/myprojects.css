@@ -8,7 +8,7 @@
     --font-size: 1.5rem;
     --color-1: #bbe1fa;
     --color-2: #1b262c;
-    --color-3:rgba(50, 130, 184, 0.3);
+    --color-3: #82c8f7;
     --color-4: #ffffff;
     --color-5: #2f4653;
     --font-weight-1: 400;
@@ -17,7 +17,7 @@
     --font-weight-4: 900;
 }
 body{
-    background-color: var(--color-5);
+    background-color: var(--color-3);
     font-family: var(--font-family);
     width: 100%;
     margin-left: 0;
@@ -36,13 +36,14 @@ body{
     font-family: var(--font-family);
     font-size: var(--font-size-1);
     font-weight: var(--font-weight-4);
-    color: var(--color-1);
+    color: var(--color-2);
     text-align: center;
     margin: 40px auto;
 }
 
 .btn{
-    color: var(--color-1);
+    color: var(--color-2);
+    background-color: var(--color-4);
     font-family: var(--font-family);
     font-size: var(--font-size-3);
     font-weight: var(--font-weight-2);
@@ -50,17 +51,11 @@ body{
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 8px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .btn:hover{
     box-shadow: 8px 12px 30px rgba(0,0,0,0.15);
-    background-color: var(--color-2);
-    color: var(--color-1);
-    border-radius: 8px;
     transform: translateX(-3px);
 }
 
@@ -72,12 +67,11 @@ body{
 table{
     font-family: var(--font-family);
     width: 80%;
-    color: black;
+    color: var(--color-4);
     text-align: center;
     margin: 2em auto;
     border-collapse: separate; 
     border-spacing:0px 6px; 
-    
     filter: drop-shadow(0px 10px 25px rgba(0,0,0,0.1));
 }
 .table-heading th{
@@ -97,26 +91,23 @@ tr {
     background-color: var(--color-1);
 }
 .projects:hover{
-    background-color: var(--color-5);
-    color: var(--color-4);
+    background-color: var(--color-3);
 }
 td{
     font-family: var(--font-family);
     font-size: var(--font-size-4);
     font-weight: var(--font-weight-3);
-    text-align: center;
+    text-align: left;
     padding: 20px;  
     color: var(--color-2);
 }
-td:hover {
-    color: var(--color-4);
-}
+
 .code a{
     text-decoration: none;
     padding: 20px;  
 }
 .code-img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 
@@ -141,12 +132,9 @@ td:hover {
     }
     .projects td {
         font-size: var(--font-size-4);
-
+        text-align: center;
     }
-    .projects:hover{
-        background-color: var(--color-5);
-        color: var(--color-4);
-    }
+    
     .code-img {
         width: 35px;
         height: 35px;
