@@ -157,12 +157,12 @@ img {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     margin: 0 auto 80px;
 }
 /*-------------project card--------------*/
-.hotstar-card, .mi-card, .clipboard-card, .product-page-card {
+.hotstar-card, .mi-card, .clipboard-card, .product-page-card, .country-info-card {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -172,17 +172,17 @@ img {
     background-color: var(--color-4);
     border-radius: var(--border-radius);
 }
-.hotstar-card:hover, .mi-card:hover, .clipboard-card:hover, .product-page-card:hover {
+.hotstar-card:hover, .mi-card:hover, .clipboard-card:hover, .product-page-card:hover, .country-info-card:hover {
     transform: translateY(-3px);
     box-shadow: var(--box-shadow-1);
 }
 /*------------project image-------------*/
-.hotstar-card-img, .mi-card-img, .clipboard-card-img, .product-page-card-img {
+.hotstar-card-img, .mi-card-img, .clipboard-card-img, .product-page-card-img, .country-info-img {
     width: 90%;
     margin: 20px 0 0 0;
 }
 /*--------------project description container------------*/
-.hotstar-card-desc, .mi-card-desc, .clipboard-card-desc, .product-page-card-desc {
+.hotstar-card-desc, .mi-card-desc, .clipboard-card-desc, .product-page-card-desc, .countryinfo-card-desc {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
@@ -192,7 +192,7 @@ img {
     width: 90%;
     margin: 20px;
 }
-.hotstar-card-desc:hover, .mi-card-desc:hover, .clipboard-card-desc:hover, .product-page-card-desc:hover {
+.hotstar-card-desc:hover, .mi-card-desc:hover, .clipboard-card-desc:hover, .product-page-card-desc:hover, .countryinfo-card-desc:hover {
     transform: translateY(-2px);
     box-shadow: var(--box-shadow-2);
 }
@@ -230,7 +230,7 @@ img {
     font-weight: var(--font-weight-3);
     line-height: var(--line-height-2);
     color: var(--color-2);
-    margin: 0 40px 0 0;
+    margin: 0 20px 0 0;
     padding: 0;
 }
 /*--------------project code link container-----------*/
@@ -402,7 +402,7 @@ img {
 
 @media(max-width:1100px) {
 
-    .hotstar-card, .mi-card, .clipboard-card, .product-page-card{
+    .hotstar-card, .mi-card, .clipboard-card, .product-page-card, .country-info-card {
         margin: 20px 40px;
     }
 }
@@ -414,7 +414,7 @@ img {
     .navbar {
        width:60%;
     }
-    .hotstar-card, .mi-card, .clipboard-card, .product-page-card {
+    .hotstar-card, .mi-card, .clipboard-card, .product-page-card, .country-info-card {
         margin: 20px auto;
     }
     .skills { 
@@ -445,7 +445,7 @@ img {
         max-width: 450px;
         padding: 0 20px;
     }
-    .hotstar-card, .mi-card, .clipboard-card, .product-page-card {
+    .hotstar-card, .mi-card, .clipboard-card, .product-page-card, .country-info-card {
         margin: 20px auto;
     }
     .skills { 
@@ -479,59 +479,6 @@ img {
     }
 }
 
-/* @media(max-width:437px) {
-
-    :root {
-    --font-size-3: 1.25rem;
-    --font-size-2:  1.375rem;
-    --font-size-1: 2rem;
-    }
-    
-    .greeting {
-        font-size: var(--font-size-1);
-        font-weight: var(--font-weight-3);
-    }
-    .desc {
-        font-size: var(--font-size-2);
-    }
-    .heading {
-        font-size: var(--font-size-1);
-    }
-    .work-section {
-        margin: 0 auto;
-        width: 98%;
-    }
-    .projects {
-        width: 95%;
-    }
-    .tech-stack {
-        font-size: var(--font-size-3);
-        margin: 0 25px 0 0;
-    }
-    
-    .skills {
-        width: 95%;
-    }
-    .html, .css, .bs, .sass, .js, .git {
-        width: 70px;
-        margin: 30px 50px;
-    }
-    .g-mail
-    {
-     margin: 10px auto;;
-    }
-    .gmail-link {
-        padding: 18px 34px;
-    }
-    
-    .socialMediaLinks {
-        width: 80px;
-        height: 80px;
-        margin: 20px ;
-    }
-    
-}
-*/
 /*--------------media queries-for extra small screen-----------*/
  
 @media(max-width:437px) {
@@ -573,35 +520,23 @@ img {
         width: 95%;
         padding: 0 10px;
         text-align: center;
-
     }
-   
-  
     .btn {
         margin: 0 0 80px 10px;
         font-size: var(--font-size-3);
-
     }
-
-    
     .work-section .heading
     {
         margin: 0 0 10px;
         font-size: var(--font-size-1);
     }
-    
     .projects {
-   
         margin: 0 auto 15px;
-
     }
     .hotstar-card, .mi-card, .clipboard-card, .product-page-card {
-      
         width: 90%;
         margin: 20px auto;
- 
     }
-
     .hotstar-card-desc, .mi-card-desc, .clipboard-card-desc, .product-page-card-desc {
         width: 90%;
         margin: 20px 0;
@@ -612,27 +547,20 @@ img {
     }
     .card-desc {
         font-size: var(--font-size-3);
-
-        margin: 0 15px 5px ;
-   
+        margin: 0 15px 5px;
     }
     .technology-container {
-      
         margin: 0 0 15px 15px;
         flex-flow: row wrap;
     }
-    
     .tech-stack {
         font-size: var(--font-size-4);
         margin: 0 30px 0 0;
     }
-  
     .tech-stack:last-child {
         margin: 0 ;
     }
-  
     .link-container {
-    
         margin: 0 0 15px 15px;
     }
     .project-link
@@ -640,7 +568,7 @@ img {
         width: 35px;
         margin:0 40px 0 0;
     }
-    .skills-section{
+    .skills-section {
      margin:  0;
     }
     .heading {
@@ -649,26 +577,22 @@ img {
         padding: 0;
     }
    .skills
-   {
+    {
        width: 98%;
        margin: 0 auto;
-   }
+    }
     .html, .css, .bs, .sass, .js, .git
-     {
+    {
         width: 50px;
         margin: 30px 50px;
     }
-
     .skill {
         font-size: var(--font-size-3);
     }
-  
     .contact-section {
-  
         margin: 30px auto 20px;
     }
-
-     .socialMediaLinks {
+    .socialMediaLinks {
         margin: 15px;
         width: 70px;
         height: 70px;
@@ -681,8 +605,6 @@ img {
         padding: 15px 30px;
         margin: 0 10px;
     }
-
-
     .footer-content {
         flex-flow: column wrap;
         padding: 10px 0;
@@ -691,10 +613,8 @@ img {
         font-size:var(--font-size-4);
         margin: 0 ;
     }
-
     .go-up {
         margin: 30px 0 0 0 ;
         width: 40px;
     }
-
 }
