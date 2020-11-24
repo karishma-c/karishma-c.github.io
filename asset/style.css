@@ -177,7 +177,7 @@ img {
     box-shadow: var(--box-shadow-1);
 }
 /*------------project image-------------*/
-.hotstar-card-img, .mi-card-img, .clipboard-card-img, .product-page-card-img, .country-info-img {
+.hotstar-card-img, .mi-card-img, .clipboard-card-img, .product-page-card-img, .countryinfo-card-img {
     width: 90%;
     margin: 20px 0 0 0;
 }
@@ -533,11 +533,11 @@ img {
     .projects {
         margin: 0 auto 15px;
     }
-    .hotstar-card, .mi-card, .clipboard-card, .product-page-card {
+    .hotstar-card, .mi-card, .clipboard-card, .product-page-card, .country-info-card {
         width: 90%;
         margin: 20px auto;
     }
-    .hotstar-card-desc, .mi-card-desc, .clipboard-card-desc, .product-page-card-desc {
+    .hotstar-card-desc, .mi-card-desc, .clipboard-card-desc, .product-page-card-desc, .countryinfo-card-desc {
         width: 90%;
         margin: 20px 0;
     }
@@ -547,7 +547,7 @@ img {
     }
     .card-desc {
         font-size: var(--font-size-3);
-        margin: 0 15px 5px;
+        margin: 0 13px 5px;
     }
     .technology-container {
         margin: 0 0 15px 15px;
