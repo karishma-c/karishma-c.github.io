@@ -6,197 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C.Karishma | Frontend web developer </title>
     <link rel="stylesheet" href="./asset/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">    
 </head>
 <body>
     <div class="container">
+        
         <nav class="navbar">
-            <a href="#about" class="nav-links active">About</a>
-            <a href="#work"  class="nav-links">Work</a>
-            <a href="#contact"  class="nav-links">Contact</a>
-
+            <h1 class="logo">karishma</h1>
+            <ul class="nav-items">
+                <li class="nav-links active"><a href="#work" >Work</a></li>
+                <li class="nav-links"><a href="#">Blog</a></li>
+                <li class="nav-links"><a href="#">About</a></li>
+            </ul>
+            <img class="hamburger-menu" src="./asset/images/hamburger-menu.svg" alt="image">
         </nav>
+
         <section class="welcome-section" id="about">
             <div class="introduction">
-                <h1 class="greeting">Hi ! I am Karishma</h1>
-                <p class="desc">I can build and maintain customer-facing interfaces, business class websites using Html, Css, Javascript. Looking for a job.
-                Check out my <a class="resume" href="./asset/resume/Karishma_C.pdf" target="_blank">Resume</a></p>
-                <a href="#work" class="btn">Know More</a>
+                <h1 class="role">Front-end Developer</h1>
+                <p class="check-work">
+                    <img class="down-arrow" src="./asset/images/arrow-down.svg" alt="image">
+                    <a class="check-link" href="#work">check my works below</a>
+                </p>    
             </div>
         </section>
+
         <section class="work-section" id="work">
-            <header class="heading">Projects</header>
             <div class="projects">
-                <div class="country-info-card">
-                    <div class="countryinfo-card-img">
+                <div class="project-card" style="background-color: #EBE9F9;">
+                    <div class="card-img">
                         <img src="./asset/images/countries-info.png" alt="proj1">
                     </div>
-                    <div class="countryinfo-card-desc">
+                    <div class="card-content">
+                        <h6 class="short-desc">WEB PAGE</h6>
                         <h5 class="card-title">Countries Details Page</h5>
                         <p class="card-desc">
-                            A webpage with search, filter, modal, and dark mode functionality.
+                            A webpage to display countries details with search, filter, and dark mode functionalities.
                         </p>
               
-                        <div class="technology-container">
-                            <h6 class="tech-stack">HTML</h6>
-                            <h6 class="tech-stack">CSS</h6>
-                            <h6 class="tech-stack">Javascript</h6>
-                            <h6 class="tech-stack">API</h6>
-                        </div>
                         <div class="link-container">
-                            <a  href="https://countriesinformation.netlify.app/" class="project-link"  target="_blank"><img class="code-img" src="./asset/images/live.svg" alt="livecode"></a>
-                            <a  href="https://github.com/karishma-c/webpage-using-api" class="project-link"  target="_blank"><img class="code-img" src="./asset/images/code-git.svg" alt="democode"></a>
+                            <div class="projectLinks">
+                                <img class="process-img" src="./asset/images/process.svg" alt="process">
+                                <a  href="#" class="process-link"  target="_blank">Know the process</a>
+                            </div>
+                            <div class="projectLinks">
+                                <img class="live-img" src="./asset/images/live.svg" alt="livecode">
+                                <a  href="https://countriesinformation.netlify.app/" class="live-link"  target="_blank">Check live</a>
+                            </div>
                         </div>
                     </div>
                 </div>  
-                <div class="clipboard-card">
-                    <div class="clipboard-card-img">
-                        <img src="./asset/images/clipboard-page.png" alt="proj2">
-                    </div>
-                    <div class="clipboard-card-desc">
-                        <h5 class="card-title">Clipboard Landing Page</h5>
-                        <p class="card-desc">
-                            Responsive Clipboard Landing page using flexbox in frontend mentor.
-                        </p>
-                        <div class="technology-container">
-                            <h6 class="tech-stack">HTML</h6>
-                            <h6 class="tech-stack">CSS</h6>
-                            
-                        </div>
-                        <div class="link-container">
-                            <a  href="https://clipboard-landing-page-frontend-mentor.netlify.app/" class="project-link"  target="_blank"><img class="code-img" src="./asset/images/live.svg" alt="livecode"></a>
-                            <a  href="https://github.com/karishma-c/clipboard-landing-page" class="project-link" target="_blank"><img class="code-img" src="./asset/images/code-git.svg" alt="democode"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotstar-card">
-                    <div class="hotstar-card-img">
+                <div class="project-card" style="background-color: #FFEAB5;">
+                    <div class="card-img">
                         <img src="./asset/images/hotstart card clone.png" alt="proj1">
                     </div>
-                    <div class="hotstar-card-desc">
-                        <h5 class="card-title">Hotstar Card Page</h5>
+                    <div class="card-content">
+                        <h6 class="short-desc">WEB PAGE</h6>
+                        <h5 class="card-title">Hotstar Card Clone</h5>
                         <p class="card-desc">
-                            Inspired by the Hotstar landing page.
-                            Used flexbox to layout the elements.
+                            Inspired by the Hotstar landing page. Used flexbox to layout the elements. 
                         </p>
               
-                        <div class="technology-container">
-                            <h6 class="tech-stack">HTML</h6>
-                            <h6 class="tech-stack">SASS</h6>
-                        </div>
                         <div class="link-container">
-                            <a  href="https://hotstar-card-clone.netlify.app/" class="project-link"  target="_blank"><img class="code-img" src="./asset/images/live.svg" alt="livecode"></a>
-                            <a  href="https://github.com/karishma-c/hotstar-card-clone" class="project-link"  target="_blank"><img class="code-img" src="./asset/images/code-git.svg" alt="democode"></a>
+                            <div class="projectLinks">
+                                <img class="process-img" src="./asset/images/process.svg" alt="process">
+                                <a  href="#" class="process-link"  target="_blank">Know the process</a>
+                            </div>
+                            <div class="projectLinks">
+                                <img class="live-img" src="./asset/images/live.svg" alt="livecode">
+                                <a  href="https://hotstar-card-clone.netlify.app/" class="live-link"  target="_blank">Check live</a>
+                            </div>
                         </div>
                     </div>
-                </div>    
-                <div class="mi-card">
-                    <div class="mi-card-img">
-                        <img src="./asset/images/mi-landing-page.png" alt="proj2">
+                </div>  
+                <div class="project-card" style="background-color: #D9F2DD">
+                    <div class="card-img">
+                        <img src="./asset/images/mi-landing-page.png" alt="proj1">
                     </div>
-                    <div class="mi-card-desc">
-                        <h5 class="card-title">Mi Landing Page</h5>
+                    <div class="card-content">
+                        <h6 class="short-desc">WEB PAGE</h6>
+                        <h5 class="card-title">MI Landing Page</h5>
                         <p class="card-desc">
                             Responsive Landing page for MI Products using 12 column grid system.
                         </p>
-                        <div class="technology-container">
-                            <h6 class="tech-stack">HTML</h6>
-                            <h6 class="tech-stack">CSS</h6>
-                            <h6 class="tech-stack">BOOTSTRAP</h6>
-                        </div>
+              
                         <div class="link-container">
-                            <a  href="https://mi-landing-page.netlify.app/ " class="project-link"  target="_blank"><img class="code-img" src="./asset/images/live.svg" alt="livecode"></a>
-                            <a  href="https://github.com/karishma-c/bootstrap-landingpage" class="project-link" target="_blank"><img class="code-img" src="./asset/images/code-git.svg" alt="democode"></a>
+                            <div class="projectLinks">
+                                <img class="process-img" src="./asset/images/process.svg" alt="process">
+                                <a  href="#" class="process-link"  target="_blank">Know the process</a>
+                            </div>
+                            <div class="projectLinks">
+                                <img class="live-img" src="./asset/images/live.svg" alt="livecode">
+                                <a  href="https://mi-landing-page.netlify.app/" class="live-link"  target="_blank">Check live</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-page-card">
-                    <div class="product-page-card-img">
-                        <img src="./asset/images/product-page.png" alt="proj4">
-                    </div>
-                    <div class="product-page-card-desc">
-                        <h5 class="card-title">Product Page</h5>
-                        <p class="card-desc">
-                            Responsive product page created using grid and flex layout.
-                        </p>
-                        <div class="technology-container">
-                            <h6 class="tech-stack">HTML</h6>
-                            <h6 class="tech-stack">CSS</h6>
-                            
-                        </div>
-                        <div class="link-container">
-                            <a  href="https://product-page-using-grid.netlify.app/" class="project-link"  target="_blank"><img class="code-img" src="./asset/images/live.svg" alt="livecode"></a>
-                            <a  href="https://github.com/karishma-c/product-page-using-grid" class="project-link" target="_blank"><img class="code-img" src="./asset/images/code-git.svg" alt="democode"></a>
-                        </div>
-                    </div>
-                </div>
-                    
+                </div>  
             </div>
-            <a href="myprojects.html" class="btn">Find More &#8594;</a>
-            
-        </section>
-        <section class="skills-section">
-            <header class="heading">Skills</header>
-            <div class="skills">
-                <div class="html">
-                    
-                    <img src="./asset/images/html5.svg" alt="img1">
-                    <p class="skill">Html</p>
-                </div>
-                
-                <div class="css">
-                    <img src="./asset/images/css-3.svg" alt="img1">
-                    <p class="skill">Css</p>
-                </div>
-                
-                <div class="bs">
-                    <img src="./asset/images/bootstrap.svg" alt="img1">
-                    <p class="skill">Bootstrap</p>
-                </div>
-                
-                <div class="sass">
-                    <img src="./asset/images/sass.svg" alt="img1">
-                    <p class="skill">Sass</p>
-                </div>
-                
-                <div class="js">
-                    <img src="./asset/images/js.svg" alt="img1">
-                    <p class="skill">Javascript</p>
-                </div>
-                
-                <div class="git">
-                    <img src="./asset/images/skills-git.svg" alt="img1">
-                    <p class="skill">Git</p>
-                </div>
-                
+            <div class="explore-more">
+                <a href="myprojects.html" class="explore-btn">Explore More</a>
+                <img src="./asset/images/chevron-right.svg" alt="image">
             </div>
         </section>
-        <section class="contact-section" id="contact">
-            <header class="heading">Contact me</header>
-            <div class="contact-details">
-                <div class="g-mail">
-                    <h4 class="gmail-link">karishmadgct@gmail.com</h4>
-                </div>
-                <div class="socailLinkContainer">
-                    <a class="socialMediaLinks"  href="https://www.linkedin.com/in/karishma--c/" target="_blank"><img src="./asset/images/linkedin.svg" alt="linked-in"></a>
-                    <a class="socialMediaLinks" href="https://twitter.com/_karishc" target="_blank"><img src="./asset/images/twitter.svg" alt="twitter"></a>
-                    <a class="socialMediaLinks" href="https://github.com/karishma-c" target="_blank"><img src="./asset/images/github.svg" alt="git"></a>
-                </div>
-               
 
-           
+        <section class="contact-section" >
+            <div class="socailLinkContainer">
+                <a class="socialMediaLinks"  href="https://www.linkedin.com/in/karishma--c/" target="_blank"><img src="./asset/images/linkedin.svg" alt="linked-in"></a>
+                <a class="socialMediaLinks" href="https://github.com/karishma-c" target="_blank"><img src="./asset/images/github.svg" alt="git"></a>
+                <a class="socialMediaLinks" href="https://twitter.com/_karishc" target="_blank"><img src="./asset/images/twitter.svg" alt="twitter"></a>
             </div>
-       
         </section>
+
         <footer class="footer-container">
             <div class="footer-content">
-                <h6 class="content">copyrights @2021</h6>
-                <h6 class="profile-link">Developed by <a href="http://karishma-c.github.io/">Karishma</a></h6>
-                <a class="go-up" href="#"><img  src="./asset/images/arrow-up.svg" alt="goup"></a>
+                <h6 class="profile-link">Developed by <a href="http://karishma-c.github.io/">me</a> @ 2021</h6>
             </div>
-            
-          
-           
         </footer>
     </div>
 </body>
