@@ -9,7 +9,7 @@ body {
     .container {
         margin: 0 auto;
         color: $color4;
-        @include flex(column,center,space-between);
+        @include flex(column,center,center);
 
         .navbar {
             margin: 40px 0 0;
@@ -119,6 +119,7 @@ body {
 
                     .card-content {
                         margin: 40px 30px 40px 40px;
+                        width: 315px;
                         @include flex(column,flex-start,center);
 
                         .short-desc {
@@ -268,14 +269,14 @@ body {
                 @include flex(row,center,center);
 
                 .logo {
-                    margin: 0 100px 0 0;
+                    margin: 0 80px 0 0;
                 }
                 .nav-items {
                     display: none;
                 }
                 .hamburger-menu {
                     display: block;
-                    margin: 0 0 0 100px;
+                    margin: 0 0 0 80px;
                 }
             }
             .welcome-section {
@@ -323,10 +324,10 @@ body {
         .container {
             .navbar {
                 .logo {
-                    margin: 0 90px 0 0;
+                    margin: 0 60px 0 0;
                 }
                 .hamburger-menu {
-                    margin: 0 0 0 90px;
+                    margin: 0 0 0 60px;
                 }
             }
             .welcome-section {
