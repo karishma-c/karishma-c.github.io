@@ -265,19 +265,20 @@ body {
         .container {
            
             .navbar {
-                margin: 40px auto 0;
-                @include flex(row,center,center);
+                margin: 40px 0 0;
+                @include flex(row,flex-start,flex-start);
 
                 .logo {
-                    margin: 0 80px 0 0;
+                    margin: 0px;
+                    
                 }
                 .nav-items {
                     display: none;
                 }
-                .hamburger-menu {
-                    display: block;
-                    margin: 0 0 0 80px;
-                }
+                // .hamburger-menu {
+                //     display: block;
+                //     margin: 0 0 0 80px;
+                // }
             }
             .welcome-section {
                 .introduction {
@@ -322,14 +323,14 @@ body {
 
     body {
         .container {
-            .navbar {
-                .logo {
-                    margin: 0 60px 0 0;
-                }
-                .hamburger-menu {
-                    margin: 0 0 0 60px;
-                }
-            }
+            // .navbar {
+            //     .logo {
+            //         margin: 0 60px 0 0;
+            //     }
+            //     .hamburger-menu {
+            //         margin: 0 0 0 60px;
+            //     }
+            // }
             .welcome-section {
                 .introduction {
                     .role {

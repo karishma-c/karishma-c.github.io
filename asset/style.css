@@ -13,9 +13,9 @@ body .container {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -214,6 +214,7 @@ body .container .work-section .projects .project-card .card-img img {
 
 body .container .work-section .projects .project-card .card-content {
   margin: 40px 30px 40px 40px;
+  width: 315px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,7 +394,7 @@ body .container .footer-container .footer-content .profile-link a {
     margin: 0 auto;
   }
   body .container .navbar {
-    margin: 40px auto 0;
+    margin: 40px 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -401,22 +402,18 @@ body .container .footer-container .footer-content .profile-link a {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   body .container .navbar .logo {
-    margin: 0 100px 0 0;
+    margin: 0px;
   }
   body .container .navbar .nav-items {
     display: none;
-  }
-  body .container .navbar .hamburger-menu {
-    display: block;
-    margin: 0 0 0 100px;
   }
   body .container .welcome-section .introduction {
     margin: 100px auto 0;
@@ -464,12 +461,6 @@ body .container .footer-container .footer-content .profile-link a {
 }
 
 @media (max-width: 320px) {
-  body .container .navbar .logo {
-    margin: 0 90px 0 0;
-  }
-  body .container .navbar .hamburger-menu {
-    margin: 0 0 0 90px;
-  }
   body .container .welcome-section .introduction .role {
     font-size: 23.04px;
   }
