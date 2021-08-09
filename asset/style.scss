@@ -107,8 +107,9 @@ body {
 
                     .card-img {
                         width: 380px;
-                        height: 380px;
+                        height: 400px;
                         margin: 10px;
+                        padding: 10px;
 
                         img {
                             width: 100%;
@@ -118,7 +119,8 @@ body {
                     }
 
                     .card-content {
-                        margin: 40px 30px 40px 40px;
+                        margin: 20px 30px;
+                        padding: 10px;
                         width: 315px;
                         @include flex(column,flex-start,center);
 
@@ -127,7 +129,7 @@ body {
                             font-size: $link-font;
                             font-weight: $font-weight;
                             color: $color5;
-                            margin: 0 0 30px 0;
+                            margin: 0 0 20px 0;
                         }
                         .card-title {
                             font-family: $primary-font;
@@ -145,7 +147,7 @@ body {
                         }
 
                         .link-container {
-                            margin: 40px 0 40px 0;
+                            margin: 20px 0 20px 0;
                             @include flex(row,space-between,center);
 
                             .projectLinks {
@@ -223,7 +225,7 @@ body {
     } 
 }
 
-@media(max-width:768px) {
+@media(max-width:800px) {
 
     body {
         .container {
@@ -257,7 +259,7 @@ body {
     }
 }
 
-@media(max-width:425px) {
+@media(max-width:600px) {
 
     body {
         width: 95%;
@@ -319,7 +321,7 @@ body {
     }
 }
 
-@media(max-width:320px) {
+@media(max-width:350px) {
 
     body {
         .container {
