@@ -4,15 +4,14 @@ body {
 }
 
 body .container {
-  margin: 0 auto;
   color: #0B0E11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -28,8 +27,8 @@ body .container .navbar {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -54,8 +53,8 @@ body .container .navbar .nav-items {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -86,6 +85,7 @@ body .container .navbar .nav-items .nav-links a {
 
 body .container .navbar .nav-items .active {
   border-bottom: 1px solid #0B0E11;
+  font-weight: 700;
 }
 
 body .container .navbar .hamburger-menu {
@@ -99,8 +99,8 @@ body .container .welcome-section .introduction {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -123,8 +123,8 @@ body .container .welcome-section .introduction .check-work {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -153,8 +153,8 @@ body .container .work-section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -169,8 +169,8 @@ body .container .work-section .projects {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -189,8 +189,8 @@ body .container .work-section .projects .project-card {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -222,8 +222,8 @@ body .container .work-section .projects .project-card .card-content {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -263,8 +263,8 @@ body .container .work-section .projects .project-card .card-content .link-contai
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -279,8 +279,8 @@ body .container .work-section .projects .project-card .card-content .link-contai
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -312,8 +312,8 @@ body .container .work-section .explore-more {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -338,8 +338,8 @@ body .container .contact-section .socailLinkContainer {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -373,6 +373,242 @@ body .container .footer-container .footer-content .profile-link a {
   color: #0B0E11;
 }
 
+body .container .about-section {
+  margin: 80px auto 50px;
+}
+
+body .container .about-section .about-heading {
+  margin: 30px auto 25px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 33.18px;
+}
+
+body .container .about-section .about-description {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  max-width: 700px;
+}
+
+body .container .about-section .about-description .maasika {
+  text-decoration: none;
+  font-weight: 700;
+  color: #24aaf8;
+}
+
+body .container .about-section .about-description .maasika:hover {
+  text-decoration: underline;
+}
+
+body .container .about-section .resume {
+  font-family: "Nunito", sans-serif;
+  margin: 30px 0 0 0;
+}
+
+body .container .about-section .resume a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #0B0E11;
+}
+
+body .container .about-section .resume a:hover {
+  text-decoration: underline;
+}
+
+body .container .experience-section {
+  margin: 80px auto 60px;
+}
+
+body .container .experience-section .experience-heading {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 23.04px;
+  margin: 0px 0px 25px;
+}
+
+body .container .experience-section .experience-card {
+  width: 330px;
+  height: 180px;
+  -webkit-box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+}
+
+body .container .experience-section .experience-card .company {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 19.2px;
+  font-weight: 700;
+  color: #0B0E11;
+  margin: 25px 0px 5px 25px;
+}
+
+body .container .experience-section .experience-card .role {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #616161;
+  font-weight: 400;
+  margin: 5px 0px 40px 25px;
+}
+
+body .container .experience-section .experience-card .intern-info {
+  list-style-type: none;
+  margin: 0px 25px 25px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .container .experience-section .experience-card .intern-info li {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #616161;
+}
+
+body .container .skills-section .skills-heading, body .container .skills-section .tools-heading, body .container .skills-section .contact-heading, body .container .tools-section .skills-heading, body .container .tools-section .tools-heading, body .container .tools-section .contact-heading, body .container .contact-section .skills-heading, body .container .contact-section .tools-heading, body .container .contact-section .contact-heading {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 23.04px;
+  margin: 0px 0px 25px;
+}
+
+body .container .skills-section .tools-heading, body .container .skills-section .contact-heading, body .container .tools-section .tools-heading, body .container .tools-section .contact-heading, body .container .contact-section .tools-heading, body .container .contact-section .contact-heading {
+  margin: 60px 0px 30px;
+}
+
+body .container .skills-section .socailLinkContainer, body .container .tools-section .socailLinkContainer, body .container .contact-section .socailLinkContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+}
+
+body .container .skills-section .skills, body .container .skills-section .tools, body .container .tools-section .skills, body .container .tools-section .tools, body .container .contact-section .skills, body .container .contact-section .tools {
+  list-style-type: none;
+  margin: 0px 0px 25px;
+  padding: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .container .skills-section .skills li, body .container .skills-section .tools li, body .container .tools-section .skills li, body .container .tools-section .tools li, body .container .contact-section .skills li, body .container .contact-section .tools li {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #616161;
+  margin: 0px 30px 0px 0px;
+  padding-bottom: 20px;
+}
+
+body .container .skills-section .tools, body .container .tools-section .tools, body .container .contact-section .tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .container .skills-section .tools li, body .container .tools-section .tools li, body .container .contact-section .tools li {
+  margin: 0px 30px 0px 0px;
+}
+
+body .container .dropMail-section {
+  width: 100%;
+  margin: 80px 0px 0px;
+  background-color: #E2DFF6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .dropMail-section .drop-mail {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 47.78px;
+  font-weight: 900;
+  color: #0B0E11;
+  max-width: 700px;
+  text-align: center;
+  margin: 80px auto 0px;
+  padding: 0px 20px;
+}
+
+body .container .dropMail-section .copy-text {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3C3E41;
+  margin: 35px auto 30px;
+}
+
+body .container .dropMail-section .mailLink {
+  margin: 0px auto 50px;
+}
+
 @media (max-width: 800px) {
   body .container .navbar .logo {
     margin: 0 350px 0 0;
@@ -393,7 +629,6 @@ body .container .footer-container .footer-content .profile-link a {
 @media (max-width: 600px) {
   body {
     width: 95%;
-    margin: 0 auto;
   }
   body .container .navbar {
     margin: 40px 0 0;
@@ -402,8 +637,8 @@ body .container .footer-container .footer-content .profile-link a {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -431,8 +666,8 @@ body .container .footer-container .footer-content .profile-link a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -460,6 +695,28 @@ body .container .footer-container .footer-content .profile-link a {
   body .container .work-section .projects .project-card .card-content .link-container {
     margin: 60px 0 40px;
   }
+  body .container .about-section, body .container .experience-section, body .container .skills-section, body .container .tools-section, body .container .contact-section {
+    padding: 0px 20px;
+  }
+  body .container .about-section .skills, body .container .experience-section .skills, body .container .skills-section .skills, body .container .tools-section .skills, body .container .contact-section .skills {
+    width: 95%;
+  }
+  body .container .dropMail-section {
+    width: 100%;
+  }
+  body .container .dropMail-section .drop-mail {
+    font-size: 23.04px;
+  }
+  body .container .dropMail-section .mailLink {
+    width: 80px;
+    height: 80px;
+  }
+  body .container .dropMail-section .mailLink img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 @media (max-width: 350px) {
@@ -484,8 +741,8 @@ body .container .footer-container .footer-content .profile-link a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -495,6 +752,12 @@ body .container .footer-container .footer-content .profile-link a {
   }
   body .container .work-section .projects .project-card .card-content .link-container .projectLinks:nth-child(1) {
     margin: 0 0 15px 0;
+  }
+  body .container .experience-section .experience-card {
+    width: 300px;
+  }
+  body .container .dropMail-section {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

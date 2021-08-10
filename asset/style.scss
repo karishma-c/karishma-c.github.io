@@ -7,7 +7,7 @@ body {
     // margin: 0 auto;
 
     .container {
-        margin: 0 auto;
+        // margin: 0 auto;
         color: $color4;
         @include flex(column,center,center);
 
@@ -49,6 +49,7 @@ body {
 
                 .active {
                     border-bottom: 1px solid $color4;
+                    font-weight: $font-weight1;
                 }
             }
 
@@ -222,6 +223,168 @@ body {
                 }
             }
         }
+
+        .about-section {
+            margin: 80px auto 50px;
+           
+            .about-heading {
+                margin: 30px auto 25px; 
+                font-family: $primary-font;
+                font-size: $font-h2;
+            }
+            .about-description {
+                font-family: $secondary-font;
+                font-size: $para-font;
+                line-height: 1.8; 
+                margin: 0 auto 30px; 
+                font-size: $para-font; 
+                max-width: 700px;
+
+                .maasika {
+                    text-decoration: none; 
+                    font-weight: $font-weight1; 
+                    color: rgb(36, 170, 248);
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .resume {
+                font-family: $secondary-font;
+                margin: 30px 0 0 0;    
+
+                a {
+                    text-decoration: none;
+                    font-weight: $font-weight1;
+                    color: $color4;
+    
+                    &:hover {
+                        text-decoration: underline;
+                    }    
+                }
+            }
+        }
+
+        .experience-section {
+            margin: 80px auto 60px;
+            
+            .experience-heading {
+                font-family: $primary-font;
+                font-size: $font-h3;
+                margin: 0px 0px 25px;
+            }
+
+            .experience-card {
+                width: 330px;
+                height: 180px;
+                box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.15);
+                border-radius: $border-radius1;
+                color: $color6;
+                @include flex(column,space-between,flex-start);
+
+                .company {
+                    font-family: $primary-font;
+                    font-size: $font-h4;
+                    font-weight: $font-weight1;
+                    color: $color4;
+                    margin: 25px 0px 5px 25px;
+                }
+
+                .role {
+                    font-family: $secondary-font;
+                    font-size: $para-font;
+                    color: $color5;
+                    font-weight: $font-weight;
+                    margin: 5px 0px 40px 25px;
+                }
+
+                .intern-info {
+                    list-style-type: none;
+                    margin: 0px 25px 25px;
+                    padding: 0px;
+                    @include flex(row,flex-start,space-between);
+
+                    li {
+                        font-family: $secondary-font;
+                        font-size: $link-font;
+                        font-weight: $font-weight;
+                        color: $color5;
+                    }
+                }
+            }
+        }
+
+        .skills-section, .tools-section, .contact-section {
+
+            .skills-heading, .tools-heading, .contact-heading {
+                font-family: $primary-font;
+                font-size: $font-h3;
+                margin: 0px 0px 25px;
+            }
+            .tools-heading, .contact-heading {
+                margin: 60px 0px 30px; 
+            }
+
+            .socailLinkContainer {
+                
+                @include flex(row,space-between,flex-start);
+            }
+
+            .skills, .tools {
+                list-style-type: none;
+                margin: 0px 0px 25px;
+                padding: 0px;
+                flex-flow: row wrap;
+                width: 70%;
+                @include flex(row,flex-start,flex-start);
+
+                li {
+                    font-family: $secondary-font;
+                    font-size: $link-font;
+                    font-weight: $font-weight;
+                    color: $color5;
+                    margin: 0px 30px 0px 0px;
+                    padding-bottom: 20px;
+                }
+            }
+            .tools {
+                @include flex(row,flex-start,flex-start);
+
+                li {
+                    margin: 0px 30px 0px 0px;
+                }
+            }
+        }
+
+        .dropMail-section {
+            width: 100%;
+            margin: 80px 0px 0px;
+            background-color: $color7;
+            @include flex(column,center,center);
+
+            .drop-mail {
+                font-family: $primary-font;
+                font-size: $font;
+                font-weight: $font-weight3;
+                color: $color4;
+                max-width: 700px;
+                text-align: center;
+                margin: 80px auto 0px;
+                padding: 0px 20px;
+            }
+            .copy-text {
+                font-family: $secondary-font;
+                font-size: $para-font;
+                font-weight: $font-weight;
+                color: $color8;
+                margin: 35px auto 30px;
+            }
+            .mailLink {
+                margin: 0px auto 50px;
+            }
+        }
     } 
 }
 
@@ -263,7 +426,7 @@ body {
 
     body {
         width: 95%;
-        margin: 0 auto;
+        // margin: 0 auto;
         .container {
            
             .navbar {
@@ -317,6 +480,32 @@ body {
                     }
                 }
             }
+
+            .about-section, .experience-section, .skills-section, .tools-section, .contact-section {
+                padding: 0px 20px;
+
+                .skills {
+                    width: 95%;
+                }
+            }
+
+            .dropMail-section {
+                width: 100%;
+
+                .drop-mail {
+                    font-size: $font-h3;
+                }
+                .mailLink {
+                    width: 80px;
+                    height: 80px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
         }
     }
 }
@@ -361,6 +550,17 @@ body {
                         }
                     }
                 }
+            }
+
+            .experience-section {
+
+                .experience-card {
+                    width: 300px;
+                }
+            }
+
+            .dropMail-section {
+                width: 100%;
             }
         }
     }
