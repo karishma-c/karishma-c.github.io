@@ -104,13 +104,13 @@ body {
                     height: 300px;
                     margin: 0 0 80px;
                     border-radius: $border-radius;
+                    flex-flow:  row nowrap;
                     @include flex(row,center,center);
 
                     .card-img {
                         width: 380px;
                         height: 400px;
-                        margin: 10px;
-                        padding: 10px;
+                        padding: 20px;
 
                         img {
                             width: 100%;
@@ -336,9 +336,10 @@ body {
                 list-style-type: none;
                 margin: 0px 0px 25px;
                 padding: 0px;
-                flex-flow: row wrap;
+                
                 width: 70%;
                 @include flex(row,flex-start,flex-start);
+                flex-flow: row wrap !important;
 
                 li {
                     font-family: $secondary-font;
@@ -360,8 +361,8 @@ body {
 
         .dropMail-section {
             width: 100%;
-            margin: 80px 0px 0px;
-            background-color: $color7;
+            margin: 30px auto 0px;
+            // background-color: $color7;
             @include flex(column,center,center);
 
             .drop-mail {
@@ -392,12 +393,7 @@ body {
 
     body {
         .container {
-            .navbar {
-                .logo {
-                    margin: 0 350px 0 0;
-                }
-            }
-
+            
             .welcome-section {
                 .introduction {
                     .role {
@@ -419,32 +415,30 @@ body {
                 }
             }
         }
+
+        .about-section {
+
+            .about-description {
+                max-width: 500px;
+            }
+        }
     }
 }
 
 @media(max-width:600px) {
 
     body {
-        width: 95%;
+        // width: 95%;
         // margin: 0 auto;
         .container {
-           
+            
             .navbar {
-                margin: 40px 0 0;
-                @include flex(row,flex-start,flex-start);
-
+                
                 .logo {
-                    margin: 0px;
-                    
+                    margin: 0 120px 0 0;
                 }
-                .nav-items {
-                    display: none;
-                }
-                // .hamburger-menu {
-                //     display: block;
-                //     margin: 0 0 0 80px;
-                // }
             }
+           
             .welcome-section {
                 .introduction {
                     margin: 100px auto 0;
@@ -452,18 +446,21 @@ body {
             }
             .work-section {
                 margin: 100px auto 0;
+
                 .projects {
                     .project-card {
                         width: 350px;
-                        height: 500px;
+                        height: 520px;
+                        flex-flow: column nowrap;
                         @include flex(column,center,flex-start);
                         .card-img {
                             margin: 0;
                             width: 320px;
-                            height: 300px;
+                            height: 350px;
                         }
                         .card-content {
                             margin: 0 0 0 20px;
+                            
                             .short-desc {
                                 margin: 0 0 20px;
                             }
@@ -482,8 +479,9 @@ body {
             }
 
             .about-section, .experience-section, .skills-section, .tools-section, .contact-section {
-                padding: 0px 20px;
+                padding: 0px 10px;
 
+                
                 .skills {
                     width: 95%;
                 }
@@ -514,14 +512,14 @@ body {
 
     body {
         .container {
-            // .navbar {
-            //     .logo {
-            //         margin: 0 60px 0 0;
-            //     }
-            //     .hamburger-menu {
-            //         margin: 0 0 0 60px;
-            //     }
-            // }
+
+            .navbar {
+                
+                .logo {
+                    margin: 0 60px 0 0;
+                }
+            }
+            
             .welcome-section {
                 .introduction {
                     .role {
@@ -533,13 +531,17 @@ body {
                 .projects {
                     .project-card {
                         width: 300px;
-                        height: 550px;
+                        height: 480px;
+                       
                         .card-img {
                             width: 280px;
                             height: 260px;
                         }
                         .card-content {
-                            margin: 0 0 40px 15px;
+                            width: 280px;
+                            margin: 0 0 40px;
+                            padding: 0px 10px;
+                            
                             .link-container {
                                 margin: 40px 0;
                                 @include flex(column,flex-start,center);
@@ -552,10 +554,16 @@ body {
                 }
             }
 
+            .about-section {
+                .about-description {
+                    max-width: 280px;
+                    margin: 30px 0;
+                }
+            }
             .experience-section {
 
                 .experience-card {
-                    width: 300px;
+                    width: 280px;
                 }
             }
 

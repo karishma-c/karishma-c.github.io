@@ -1,6 +1,6 @@
 @mixin flex($direction,$main-axis,$cross-axis) {
     display: flex;
-    flex-flow: $direction wrap;
+    flex-flow: $direction nowrap;
     @if $main-axis == row {
         justify-content: $main-axis;
         align-items: $cross-axis;
