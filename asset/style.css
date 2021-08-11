@@ -597,7 +597,7 @@ body .container .dropMail-section .drop-mail {
   color: #0B0E11;
   max-width: 700px;
   text-align: center;
-  margin: 80px auto 0px;
+  margin: 10px auto 0px;
   padding: 0px 20px;
 }
 
@@ -609,8 +609,13 @@ body .container .dropMail-section .copy-text {
   margin: 35px auto 30px;
 }
 
-body .container .dropMail-section .mailLink {
-  margin: 0px auto 50px;
+body .container .dropMail-section .copy-text a {
+  text-decoration: none;
+  color: #3C3E41;
+}
+
+body .container .dropMail-section .copy-text a:hover {
+  border-bottom: 1px solid #3C3E41;
 }
 
 @media (max-width: 800px) {

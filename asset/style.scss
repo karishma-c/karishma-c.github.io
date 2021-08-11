@@ -376,7 +376,7 @@ body {
                 color: $color4;
                 max-width: 700px;
                 text-align: center;
-                margin: 80px auto 0px;
+                margin: 10px auto 0px;
                 padding: 0px 20px;
             }
             .copy-text {
@@ -385,9 +385,15 @@ body {
                 font-weight: $font-weight;
                 color: $color8;
                 margin: 35px auto 30px;
-            }
-            .mailLink {
-                margin: 0px auto 50px;
+
+                a {
+                    text-decoration: none;
+                    color: $color8;
+
+                    &:hover {
+                        border-bottom: 1px solid $color8;
+                    }
+                }
             }
         }
     } 
