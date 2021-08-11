@@ -305,6 +305,10 @@ body .container .work-section .projects .project-card .card-content .link-contai
   text-decoration: none;
 }
 
+body .container .work-section .projects .project-card .card-content .link-container .projectLinks .process-link:hover, body .container .work-section .projects .project-card .card-content .link-container .projectLinks .live-link:hover {
+  border-bottom: 1px solid #0B0E11;
+}
+
 body .container .work-section .explore-more {
   margin: 0 auto 80px;
   display: -webkit-box;

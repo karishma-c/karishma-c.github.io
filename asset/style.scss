@@ -166,6 +166,10 @@ body {
                                     font-weight: $font-weight;
                                     color: $color4;
                                     text-decoration: none;
+
+                                    &:hover {
+                                        border-bottom: 1px solid $color4;
+                                    }
                                 }
                             }
                         }
