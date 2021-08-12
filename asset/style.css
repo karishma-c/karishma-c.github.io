@@ -46,8 +46,8 @@ body .container .navbar .logo {
 
 body .container .navbar .nav-items {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -619,6 +619,10 @@ body .container .dropMail-section .copy-text a:hover {
 }
 
 @media (max-width: 800px) {
+  body .container .navbar .logo {
+    margin: 0 300px 0 0;
+    padding: 0 0 0 10px;
+  }
   body .container .welcome-section .introduction .role {
     font-size: 33.18px;
   }
@@ -637,8 +641,8 @@ body .container .dropMail-section .copy-text a:hover {
 
 @media (max-width: 600px) {
   body .container .navbar .logo {
-    margin: 0 100px 0 0;
-    padding: 0 10px;
+    margin: 0 60px 0 0;
+    padding: 0 0 0 10px;
   }
   body .container .welcome-section .introduction {
     margin: 100px auto 0;
@@ -647,7 +651,7 @@ body .container .dropMail-section .copy-text a:hover {
     margin: 100px auto 0;
   }
   body .container .work-section .projects .project-card {
-    width: 325px;
+    width: 350px;
     height: 520px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -666,9 +670,9 @@ body .container .dropMail-section .copy-text a:hover {
   }
   body .container .work-section .projects .project-card .card-img {
     margin: 0;
-    width: 300px;
+    width: 320px;
     height: 350px;
-    padding: 0 10px;
+    padding: 10px;
   }
   body .container .work-section .projects .project-card .card-content {
     margin: 0 0 0 20px;
@@ -685,10 +689,10 @@ body .container .dropMail-section .copy-text a:hover {
   body .container .work-section .projects .project-card .card-content .link-container {
     margin: 60px 0 40px;
   }
-  body .container .about-section, body .container .experience-section, body .container .skills-section, body .container .tools-section, body .container .contact-section {
+  body .container .about-section {
     padding: 0px 10px;
   }
-  body .container .about-section .skills, body .container .experience-section .skills, body .container .skills-section .skills, body .container .tools-section .skills, body .container .contact-section .skills {
+  body .container .about-section .skills {
     width: 95%;
   }
   body .container .dropMail-section {
@@ -711,10 +715,8 @@ body .container .dropMail-section .copy-text a:hover {
 
 @media (max-width: 350px) {
   body .container .navbar .logo {
-    margin: 0 60px 0 10px;
-  }
-  body .container .navbar .nav-items {
-    margin: 0 0 0 20px;
+    margin: 0 30px 0 0;
+    padding: 0 0 0 10px;
   }
   body .container .welcome-section .introduction .role {
     font-size: 23.04px;

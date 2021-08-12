@@ -24,8 +24,9 @@ body {
 
             .nav-items {
                 list-style-type: none;
-                margin: 0;
-                padding: 0;
+                margin-top: 0;
+                margin-bottom: 0;
+                
                 @include flex(row,space-between,center);
 
                 .nav-links {
@@ -403,6 +404,13 @@ body {
 
     body {
         .container {
+
+            .navbar {
+                .logo {
+                    margin: 0 300px 0 0;
+                    padding: 0 0 0 10px;
+                }
+            }
             
             .welcome-section {
                 .introduction {
@@ -445,8 +453,8 @@ body {
             .navbar {
                 
                 .logo {
-                    margin: 0 100px 0 0;
-                    padding: 0 10px;
+                    margin: 0 60px 0 0;
+                    padding: 0 0 0 10px;
                 }
                 
             }
@@ -461,15 +469,15 @@ body {
 
                 .projects {
                     .project-card {
-                        width: 325px;
+                        width: 350px;
                         height: 520px;
                         flex-flow: column nowrap;
                         @include flex(column,center,flex-start);
                         .card-img {
                             margin: 0;
-                            width: 300px;
+                            width: 320px;
                             height: 350px;
-                            padding: 0 10px;
+                            padding: 10px;
                         }
                         .card-content {
                             margin: 0 0 0 20px;
@@ -491,7 +499,7 @@ body {
                 }
             }
 
-            .about-section, .experience-section, .skills-section, .tools-section, .contact-section {
+            .about-section {
                 padding: 0px 10px;
 
                 
@@ -529,10 +537,8 @@ body {
             .navbar {
                 
                 .logo {
-                    margin: 0 60px 0 10px;
-                }
-                .nav-items {
-                    margin: 0 0 0 20px;
+                    margin: 0 30px 0 0;
+                    padding: 0 0 0 10px;
                 }
             }
             
