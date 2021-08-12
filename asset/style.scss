@@ -365,7 +365,7 @@ body {
 
         .dropMail-section {
             width: 100%;
-            margin: 30px auto 0px;
+            margin: 30px auto;
             // background-color: $color7;
             @include flex(column,center,center);
 
@@ -377,7 +377,7 @@ body {
                 max-width: 700px;
                 text-align: center;
                 margin: 10px auto 0px;
-                padding: 0px 20px;
+                padding: 0px 10px;
             }
             .copy-text {
                 font-family: $secondary-font;
@@ -445,8 +445,10 @@ body {
             .navbar {
                 
                 .logo {
-                    margin: 0 120px 0 0;
+                    margin: 0 100px 0 0;
+                    padding: 0 10px;
                 }
+                
             }
            
             .welcome-section {
@@ -526,7 +528,10 @@ body {
             .navbar {
                 
                 .logo {
-                    margin: 0 60px 0 0;
+                    margin: 0 60px 0 10px;
+                }
+                .nav-items {
+                    margin: 0 0 0 20px;
                 }
             }
             

@@ -574,7 +574,7 @@ body .container .skills-section .tools li, body .container .tools-section .tools
 
 body .container .dropMail-section {
   width: 100%;
-  margin: 30px auto 0px;
+  margin: 30px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -598,7 +598,7 @@ body .container .dropMail-section .drop-mail {
   max-width: 700px;
   text-align: center;
   margin: 10px auto 0px;
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 
 body .container .dropMail-section .copy-text {
@@ -637,7 +637,8 @@ body .container .dropMail-section .copy-text a:hover {
 
 @media (max-width: 600px) {
   body .container .navbar .logo {
-    margin: 0 120px 0 0;
+    margin: 0 100px 0 0;
+    padding: 0 10px;
   }
   body .container .welcome-section .introduction {
     margin: 100px auto 0;
@@ -709,7 +710,10 @@ body .container .dropMail-section .copy-text a:hover {
 
 @media (max-width: 350px) {
   body .container .navbar .logo {
-    margin: 0 60px 0 0;
+    margin: 0 60px 0 10px;
+  }
+  body .container .navbar .nav-items {
+    margin: 0 0 0 20px;
   }
   body .container .welcome-section .introduction .role {
     font-size: 23.04px;
