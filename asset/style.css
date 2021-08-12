@@ -647,7 +647,7 @@ body .container .dropMail-section .copy-text a:hover {
     margin: 100px auto 0;
   }
   body .container .work-section .projects .project-card {
-    width: 350px;
+    width: 325px;
     height: 520px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -666,8 +666,9 @@ body .container .dropMail-section .copy-text a:hover {
   }
   body .container .work-section .projects .project-card .card-img {
     margin: 0;
-    width: 320px;
+    width: 300px;
     height: 350px;
+    padding: 0 10px;
   }
   body .container .work-section .projects .project-card .card-content {
     margin: 0 0 0 20px;
